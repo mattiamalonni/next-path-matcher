@@ -22,7 +22,7 @@ import { createPathMatcher } from 'next-path-matcher';
 import { NextRequest } from 'next/server';
 
 const isPublicRoute = createPathMatcher(['/', '/sign-in(.*)', '/sign-up(.*)']);
-const isPrivateRoute = createPathMatcher(['/dashboard']);
+const isPrivateRoute = createPathMatcher(['/dashboard(.*)']);
 
 export function middleware(req: NextRequest) {
   if (isPublicRoute(req)) {
@@ -32,7 +32,6 @@ export function middleware(req: NextRequest) {
   if (isPrivateRoute(req)) {
     // ...your logic here...
   }
-  // ...
 }
 ```
 
