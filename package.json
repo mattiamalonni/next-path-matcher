@@ -1,7 +1,7 @@
 {
   "name": "next-path-matcher",
   "description": "A tiny utility to match Next.js request paths using glob patterns or regular expressions. Built for use with Next.js middleware and API routes.",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "type": "module",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
@@ -34,7 +34,7 @@
     "typescript": "^5.8.3"
   },
   "peerDependencies": {
-    "next": "^15.4.4"
+    "next": "^15"
   },
   "engines": {
     "node": ">=18.0.0"
